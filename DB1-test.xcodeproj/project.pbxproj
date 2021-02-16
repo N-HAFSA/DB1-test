@@ -14,6 +14,7 @@
 		9DD4DEA125DC18CA00E30DBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DD4DEA025DC18CA00E30DBA /* Assets.xcassets */; };
 		9DD4DEA425DC18CA00E30DBA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DD4DEA225DC18CA00E30DBA /* LaunchScreen.storyboard */; };
 		9DD4DEF225DC347100E30DBA /* APIRequestFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD4DEF125DC347100E30DBA /* APIRequestFetcher.swift */; };
+		9DD4DEF725DC40CE00E30DBA /* TransactionModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD4DEF625DC40CE00E30DBA /* TransactionModal.swift */; };
 		C1F411BD74376EFB7E98BECF /* Pods_DB1_test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB9991B4309679B35FA976DD /* Pods_DB1_test.framework */; };
 /* End PBXBuildFile section */
 
@@ -48,6 +49,7 @@
 		9DD4DEAA25DC18CA00E30DBA /* DB1-testTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DB1-testTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DD4DEB525DC18CA00E30DBA /* DB1-testUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DB1-testUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DD4DEF125DC347100E30DBA /* APIRequestFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequestFetcher.swift; sourceTree = "<group>"; };
+		9DD4DEF625DC40CE00E30DBA /* TransactionModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionModal.swift; sourceTree = "<group>"; };
 		EB9991B4309679B35FA976DD /* Pods_DB1_test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DB1_test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -116,6 +118,7 @@
 				9DD4DEA225DC18CA00E30DBA /* LaunchScreen.storyboard */,
 				9DD4DEA525DC18CA00E30DBA /* Info.plist */,
 				9DD4DEF125DC347100E30DBA /* APIRequestFetcher.swift */,
+				9DD4DEF625DC40CE00E30DBA /* TransactionModal.swift */,
 			);
 			path = "DB1-test";
 			sourceTree = "<group>";
@@ -305,6 +308,7 @@
 			files = (
 				9DD4DE9C25DC18C500E30DBA /* ViewController.swift in Sources */,
 				9DD4DE9825DC18C500E30DBA /* AppDelegate.swift in Sources */,
+				9DD4DEF725DC40CE00E30DBA /* TransactionModal.swift in Sources */,
 				9DD4DEF225DC347100E30DBA /* APIRequestFetcher.swift in Sources */,
 				9DD4DE9A25DC18C500E30DBA /* SceneDelegate.swift in Sources */,
 			);

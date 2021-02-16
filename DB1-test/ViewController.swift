@@ -12,7 +12,12 @@ import TinyConstraints
 
 class ViewController: UIViewController,ChartViewDelegate  {
     
+    var APIRequest = APIRequestFetcher()
+    var transactionSp : Transaction?
     lazy var lineChartView: LineChartView = {
+        
+        
+        fetchResults()
         let chartView = LineChartView()
         //chartView.backgroundColor = .systemBlue
         chartView.rightAxis.enabled = false
@@ -71,11 +76,31 @@ class ViewController: UIViewController,ChartViewDelegate  {
         lineChartView.data = data
         
     }
-    let yValues: [ ChartDataEntry] = [
+    var yValues: [ ChartDataEntry] = [
         ChartDataEntry(x: 0.0, y: 10.0),
         ChartDataEntry(x: 10.0, y: 30.0),
         ChartDataEntry(x: 20.0, y: 10.0),
         ChartDataEntry(x: 30.0, y: 10.0),
         ChartDataEntry(x: 40.0, y: 50.0)]
+
+    func fetchResults() {
+        APIRequest.search(completionHandler: {
+            
+            [weak self] results, error in
+            if case .failure = error {
+                return
+            }
+            self!.transactionSp = results
+             let Axes:[Axis] =  (self!.transactionSp?.values!)!
+            for axe in Axes{
+                print(axe.x)
+                self!.yValues.append(ChartDataEntry(x:Double(axe.x), y: Double(axe.y)))
+                
+            }
+            //ChartDataEntry(x:Double(axe.x), y: Double(axe.y))
+            print( self!.yValues)
+         })
+    }
+
 }
 
